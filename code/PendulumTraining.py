@@ -2,7 +2,7 @@ import gym
 import matplotlib.pyplot as plt
 import numpy as np
 import random as rand
-from os.path import exists
+from os.path import exists, expanduser
 import math
 
 env = gym.make('Pendulum-v1')
@@ -358,7 +358,7 @@ if askAboutSaving:
 if alwaysSaving:
     #Creating file:
     print()
-    folder = "/Users/henrydemarest/Documents/Random Coding Projects/MachineLearningExperiments/OpenAI-Gym-Pendulum/Saved Networks/"
+    folder = expanduser("~/Documents/Random Coding Projects/MachineLearningExperiments/OpenAI-Gym-Pendulum/Saved Networks/")
     filename = "P"
     filename = filename + "_gens-" + str(num_generations)
     filename = filename + "_children-"+str(num_children) 

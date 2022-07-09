@@ -2,11 +2,11 @@ import gym
 import matplotlib.pyplot as plt
 import numpy as np
 import random as rand
-from os.path import exists
+from os.path import exists, expanduser
 import math
 
 env = gym.make('Pendulum-v1')
-filepath = "/Users/henrydemarest/Documents/Random Coding Projects/MachineLearningExperiments/OpenAI-Gym-Pendulum/Saved Networks/P_gens-1_children-500_layers-1_layerHeight-4_networkTests-20_wMax-2_bMax-2_filter-False_1.txt"
+filepath = expanduser("~/Documents/Random Coding Projects/MachineLearningExperiments/OpenAI-Gym-Pendulum/Saved Networks/P_gens-1_children-500_layers-1_layerHeight-4_networkTests-20_wMax-2_bMax-2_filter-False_1.txt")
 
 #open file:
 file = open(filepath, "r")
